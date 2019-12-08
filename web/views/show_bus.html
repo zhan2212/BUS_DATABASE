@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>mpcs 53001 example</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Nav Bar-->
+        <div id="navbar" class="collapse navbar-collapse navbar-inverse">
+        <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+        </ul>
+        </div>
+    
+    
+    <table style="width:100%" border="1">
+      <thead>
+      <col width="200">
+      <col width="200">
+      <col width="200">
+      <col width="200">
+      <col width="200">
+      <col align= >
+        <tr>
+          <th scope="col" align="center"><font size="6">Name</font></th>
+          <th scope="col" align="center"><font size="6">Student ID</font></th>
+          <th scope="col" align="center"><font size="6">Department</font></th>
+          <th scope="col" align="center"><font size="6">Year</font></th>
+          <th scope="col" align="center"><font size="6">Take Date</font></th>
+          <th scope="col" align="center"><font size="6">Bus Number</font></th>
+          <th scope="col" align="center"><font size="6">Bus Start Hour</font></th>
+          <th scope="col" align="center"><font size="6">Bus End Hour</font></th>
+        </tr>
+      </thead>
+      <tbody>
+        % for i in range(len(data)):
+        <tr>
+          <td align="center"><font size="5">{{data[i][0]}}</font></td>
+          <td align="center"><font size="5">{{data[i][1]}}</font></td>
+          <td align="center"><font size="5">{{data[i][2]}}</font></td>
+          <td align="center"><font size="5">{{data[i][3]}}</font></td>
+          <td align="center"><font size="5">{{data[i][4]}}</font></td>
+          <td align="center"><font size="5">{{data[i][5]}}</font></td>
+          <td align="center"><font size="5">{{data[i][6]}}</font></td>
+          <td align="center"><font size="5">{{data[i][7]}}</font></td>
+        </tr>
+        % end
+      </tbody>
+    </table>
+    
+    </body>
+    
+</html>
+

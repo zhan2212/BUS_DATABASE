@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>mpcs 53001 example</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Nav Bar-->
+        <div id="navbar" class="collapse navbar-collapse navbar-inverse">
+        <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+       
+
+        <div class="container">
+            <div class="starter-template">
+                <!-- Main content should go here-->
+                <h1>Student View/Edit</h1>
+
+                <form action="/add_bus", method = 'POST'>
+                    Name:<br> <input type="text" name="name" value="{{data[0]}}"> <br>
+                    ID:<br> <input type="text" name="ID" value="{{data[1]}}"><br>
+                    Department:<br> <input type="text" name="Department" value="{{data[2]}}"><br>
+                    Year:<br> <input type="text" name="Year" value="{{data[3]}}"><br>
+                    Take Date:<br> <input type="text" name="date" value="{{data[4]}}"><br>
+                    Bus Number:<br> <input type="text" name="number" ><br>
+                    Bus Start Hour:<br> <input type="text" name="start" value = 0><br>
+                    Bus End Hour:<br> <input type="text" name="end" value = 0><br>
+                    <input type="submit" value = "Confirm">
+                </form>
+                
+            </div>
+        </div>
+    
+</body></html>
